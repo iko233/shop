@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group 'icu.bitgo'
+version '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':api-entity')
+    implementation "org.springframework.boot:spring-boot-starter-webflux:$springBootVersion"
+    runtimeOnly "mysql:mysql-connector-java:$mysqlVersion"
+    implementation "com.baomidou:mybatis-plus-boot-starter:$mybatisPlusVersion"
+    implementation "com.alibaba:druid-spring-boot-starter:$druidVersion"
+    implementation "org.springframework.boot:spring-boot-starter-data-mongodb:$springBootVersion"
+    implementation "com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery:$nacosVersion"
+    implementation "org.springframework:spring-jdbc:$jdbcVersion"
+    implementation "com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-config:$nacosVersion"
+    compileOnly "org.projectlombok:lombok:$lombokVersion"
+    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}

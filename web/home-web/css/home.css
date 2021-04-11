@@ -1,0 +1,244 @@
+.header {
+    background-color: #F5F5F5;
+    height: 36px;
+    width: 100%;
+    box-shadow: 0px 2px 2px #333333;
+    z-index: 10000000000;
+}
+
+.header-logout {
+    width: 1190px;
+    margin: auto;
+    padding: 0px;
+    height: 100%;
+}
+
+.header-logout>:nth-child(1) {
+    float: left;
+}
+
+.header-logout>:nth-child(2) {
+    float: right;
+    padding: 0px;
+    height: 100%;
+    margin: 0px;
+}
+
+.header-logout ul {
+    margin: 0px;
+    height: 100%;
+}
+
+.header-logout li {
+    list-style: none;
+    margin-left: 3px;
+    margin-top: 0px;
+    margin-right: 0px;
+    display: inline-block;
+    height: 100%;
+    line-height: 36px;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    color: #6C6C6C;
+}
+
+.search {
+    height: 83px;
+    width: 100%;
+    background-color: white;
+    padding-top: 33px;
+    padding-bottom: 5px;
+}
+
+.search-logout {
+    height: 100%;
+    width: 1190px;
+    margin: auto;
+}
+
+.logo {
+    display: block;
+    width: 190px;
+    height: 100%;
+    background: url(/img/logo.png) 0 0 no-repeat;
+    float: left;
+    margin-top: 5px;
+}
+
+.search-box{
+    width: 627px;
+    height: 100%;
+    float: left;
+}
+
+.nav{
+    width: 100%;
+    height: 30px;
+    background-image:-webkit-linear-gradient(left,#ff9000 0,#ff5000 100%);
+    background-image:-o-linear-gradient(left,#ff9000 0,#ff5000 100%);
+    background-image:linear-gradient(to right,#ff9000 0,#ff5000 100%);
+    background-repeat:repeat-x;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1)
+}
+
+.nav-logout{
+    width: 1190px;
+    height: 100%;
+    margin: auto;
+}
+
+.nav-logout h2{
+    background-color: #FF5000;
+    display: block;
+    height: 100%;
+    width: 190px;
+    text-align: center;
+    color: white;
+    font-family:   "宋体", sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    float: left;
+    margin: 0px;
+    border-right: 1px solid #ff5000;
+    border-left: 1px solid #ff5000;
+}
+
+.nav-logout ul{
+    margin: 0px;
+    height: 100%;
+}
+
+.nav-logout li{
+    list-style: none;
+    float: left;
+    height: 100%;
+    line-height: 30px;
+    font-family: "宋体", sans-serif;
+    color: white;
+    margin-left: 13px;
+}
+
+.main{
+    width: 1190px;
+    margin: auto;
+}
+
+.main>:nth-child(1){
+    height: 470px;
+    margin-bottom: 10px;
+}
+
+.menu{
+    height: 100%;
+    width: 190px;
+    border:1px solid #ff5000;
+    border-top: none;
+    background-color: white;
+    float: left;
+    margin-right: 10px;
+}
+
+.menu ul{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    color: hsl(0, 0%, 40%);
+    margin-top: 6px;
+    margin-left: 22px;
+}
+
+.menu li{
+    list-style: none;
+    height: 31px;
+    float: left;
+    font-size: 15px;
+    width: 100%;
+}
+
+.menu svg{
+    float: right;
+    margin-right: 30px;
+    margin-top: 4px;
+}
+
+.wiper-container .swiper-button-hidden{ 
+    opacity : 0;
+}
+
+.big-swiper{
+    width: 728px;
+    height: 460px;
+    float: left;
+    margin-top: 10px;
+    box-shadow: 0px 0px 1px #666666; 
+}
+
+.myinfo-card{
+    width: 250px;
+    margin-left: 10px;
+    height: 460px;
+    background-color: white;
+    float: right;
+    margin-top: 10px;
+    box-shadow: 0px 0px 1px #666666;
+}
+
+.main>:nth-child(2){
+    height: 260px;
+    margin-bottom: 10px;
+    background-color: pink;
+    box-shadow: 0px 0px 1px #666666;
+}
+
+.kill-clock {
+    display: block;
+    width: 190px;
+    height: 100%;
+    background: url(/img/miaosha.png) 0 0 no-repeat;
+    float: left;
+}
+
+.kill-clock div{
+    color: white;
+    text-align: center;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+
+.kill-clock>:nth-child(1){
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.kill-clock>:nth-child(2){
+    margin-top: 85px;
+}
+
+.kill-clock>:nth-child(2) strong{
+    font-size: 20px;
+}
+
+.kill-clock>:nth-child(2) span{
+    font-family: "宋体", sans-serif;
+}
+
+.kill-clock>:nth-child(2)>:nth-child(2){
+    font-size: 15px;
+}
+.kill-clock>:nth-child(2)>:nth-child(3){
+    font-size: 14px
+}
+
+.kill-clock>:nth-child(3){
+    margin-top: 13px;
+}
+
+.kill-clock>:nth-child(3) span{
+    background-color: black;
+    font-size: 25px;
+}
+
+
+.kill-swiper{
+    float: left;
+    width: 1000px;
+    height: 100%;
+}
