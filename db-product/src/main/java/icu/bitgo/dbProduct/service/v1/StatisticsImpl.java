@@ -1,4 +1,4 @@
-package icu.bitgo.dbProduct.service;
+package icu.bitgo.dbProduct.service.v1;
 
 import icu.bitgo.api.product.service.StatisticsService;
 import org.apache.dubbo.config.annotation.DubboService;

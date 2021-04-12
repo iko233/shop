@@ -2,7 +2,13 @@
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\ln102\\\\Desktop\\\\shop\\\\admin\\\\product-info-web\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\ln102\\\\Desktop\\\\shop\\\\web\\\\product-info-web\\\\pages\\\\index.vue",
     "chunkName": "pages/index"
+  },
+  {
+    "name": "id",
+    "path": "/:id",
+    "component": "C:\\\\Users\\\\ln102\\\\Desktop\\\\shop\\\\web\\\\product-info-web\\\\pages\\\\_id.vue",
+    "chunkName": "pages/_id"
   }
 ]
