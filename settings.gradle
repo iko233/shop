@@ -2,4 +2,8 @@ rootProject.name = 'shop'
 include 'db-product'
 include 'service-mail'
 include 'api-entity'
+include 'service-sellerAdmin'
+include 'api-product'
+include 'api-common'
+include 'service-staticMaker'
 

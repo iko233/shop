@@ -12,16 +12,10 @@ repositories {
 dependencies {
     compile project(':api-common')
     compile project(':api-product')
-    runtimeOnly "mysql:mysql-connector-java:$mysqlVersion"
-    implementation "com.baomidou:mybatis-plus-boot-starter:$mybatisPlusVersion"
-    implementation "com.alibaba:druid-spring-boot-starter:$druidVersion"
-    implementation "org.springframework.boot:spring-boot-starter-data-mongodb:$springBootVersion"
+    implementation "org.springframework.boot:spring-boot-starter-webflux:$springBootVersion"
     implementation "com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery:$nacosVersion"
-    implementation "org.springframework:spring-jdbc:$jdbcVersion"
     implementation "com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-config:$nacosVersion"
     implementation "org.apache.dubbo:dubbo-spring-boot-starter:$dubboVersion"
-    compileOnly "org.projectlombok:lombok:$lombokVersion"
-    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 }

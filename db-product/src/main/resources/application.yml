@@ -32,3 +32,13 @@ spring:
       maxWait: 2000
       poolPreparedStatements: true
       maxOpenPreparedStatements: 20
+dubbo:
+  application:
+    name: product
+  registry:
+    address: nacos://127.0.0.1:8848
+  scan:
+    base-packages: icu.bitigo.product.service
+  protocol:
+    name: dubbo
+    port: 20881
