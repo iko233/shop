@@ -17,11 +17,7 @@ import java.util.Map;
 
 @Component
 public class SendEmailUtils {
-	private final static Logger logger = LoggerFactory.getLogger(SendEmailUtils.class);
-
-
 	private JavaMailSender javaMailSender;
-
 	private TemplateEngine templateEngine;
 	@Value("${spring.mail.username}")
 	private String from;
@@ -33,7 +29,6 @@ public class SendEmailUtils {
 	public void setTemplateEngine(TemplateEngine templateEngine){
 		this.templateEngine=templateEngine;
 	}
-
 	public void thymeleafEmail( String to, String subject, Map<String,String> params, String template) throws MessagingException {
 		MimeMessage mimeMessage = javaMailSender.createMimeMessage();
 		MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mimeMessage, true);
