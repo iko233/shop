@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    compile project(':api-common')
+    implementation "org.springframework.boot:spring-boot-starter-amqp:$springBootVersion"
     compileOnly "org.projectlombok:lombok:$lombokVersion"
     annotationProcessor "org.projectlombok:lombok:$lombokVersion"
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'

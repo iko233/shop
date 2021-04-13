@@ -2,7 +2,7 @@ package icu.bitgo.dbProduct.mapper;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import icu.bitgo.dbProduct.domain.Product;
+import icu.bitgo.dbProduct.pojo.Do.Product;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 

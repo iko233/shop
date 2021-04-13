@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: product
+    name: db-product
   data:
     mongodb:
       uri: mongodb://192.168.100.128:27017/product
@@ -34,7 +34,7 @@ spring:
       maxOpenPreparedStatements: 20
 dubbo:
   application:
-    name: product
+    name: db-product
   registry:
     address: nacos://127.0.0.1:8848
   scan:

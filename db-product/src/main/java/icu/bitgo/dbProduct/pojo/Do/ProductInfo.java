@@ -1,4 +1,4 @@
-package icu.bitgo.dbProduct.domain;
+package icu.bitgo.dbProduct.pojo.Do;
 
 
 import lombok.AllArgsConstructor;

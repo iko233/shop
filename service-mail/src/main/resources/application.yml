@@ -13,3 +13,16 @@ spring:
       mail.smtp.socketFactory.port: 465
       mail.smtp.socketFactory.class: javax.net.ssl.SSLSocketFactory
       mail.smtp.socketFactory.fallback: false
+  rabbitmq:
+    host: 192.168.100.128
+    port: 5672
+    username: admin
+    password: admin
+  application:
+    name: db-product
+    cloud:
+      nacos:
+        config:
+          server-addr: 127.0.0.1:8848
+        discovery:
+          server-addr: 127.0.0.1:8848

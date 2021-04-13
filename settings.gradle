@@ -17,4 +17,5 @@ include 'db-order'
 include 'service-order'
 include 'service-kill'
 include 'service-systemAdmin'
+include 'api-mail'
 

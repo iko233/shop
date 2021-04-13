@@ -10,8 +10,13 @@ repositories {
 }
 
 dependencies {
+    compile project(':api-mail')
+    implementation "com.alibaba:fastjson:$fastjsonVersion"
+    implementation "org.springframework.boot:spring-boot-starter-amqp:$springBootVersion"
     implementation "org.springframework.boot:spring-boot-starter-mail:$springBootVersion"
     implementation "org.springframework.boot:spring-boot-starter-thymeleaf:$springBootVersion"
+    implementation "com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery:$nacosVersion"
+    implementation "com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-config:$nacosVersion"
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 }

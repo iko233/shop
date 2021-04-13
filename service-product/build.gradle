@@ -10,6 +10,12 @@ repositories {
 }
 
 dependencies {
+    compile project(':api-product')
+    implementation "org.springframework.boot:spring-boot-starter-thymeleaf:$springBootVersion"
+    implementation "org.springframework.boot:spring-boot-starter-webflux:$springBootVersion"
+    implementation "com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery:$nacosVersion"
+    implementation "com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-config:$nacosVersion"
+    implementation "org.apache.dubbo:dubbo-spring-boot-starter:$dubboVersion"
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 }

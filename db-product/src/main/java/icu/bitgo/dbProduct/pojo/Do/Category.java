@@ -1,4 +1,4 @@
-package icu.bitgo.dbProduct.domain;
+package icu.bitgo.dbProduct.pojo.Do;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;

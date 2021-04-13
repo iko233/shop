@@ -34,10 +34,11 @@ ext {
     set('jdbcVersion', "5.3.5")
     set('dubboVersion', "2.7.9")
     set('sentinelVersion', "2021.1")
+    set('fastjsonVersion', "1.2.76")
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-amqp'
+    implementation "org.springframework.boot:spring-boot-starter-amqp:$springBootVersion"
     implementation 'org.springframework.boot:spring-boot-starter-data-elasticsearch'
     implementation "org.springframework.boot:spring-boot-starter-data-mongodb:$springBootVersion"
     implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
@@ -59,6 +60,8 @@ dependencies {
     implementation "com.alibaba:druid-spring-boot-starter:$druidVersion"
     implementation "org.apache.dubbo:dubbo-spring-boot-autoconfigure:$dubboVersion"
     implementation "org.apache.dubbo:dubbo-spring-boot-starter:$dubboVersion"
+    implementation "com.alibaba:fastjson:$fastjsonVersion"
+
 //    implementation "com.alibaba.csp:sentinel-core:$sentinelVersion"
     implementation "com.alibaba.cloud:spring-cloud-starter-alibaba-sentinel:2021.1"
 
