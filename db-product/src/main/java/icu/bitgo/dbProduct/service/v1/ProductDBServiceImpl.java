@@ -1,5 +1,7 @@
 package icu.bitgo.dbProduct.service.v1;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
+import com.alibaba.csp.sentinel.slots.block.BlockException;
 import icu.bitgo.api.product.pojo.To.ProductInfoTransport;
 import icu.bitgo.api.product.service.ProductDBService;
 import icu.bitgo.dbProduct.mapper.ProductInfoMapper;
@@ -10,7 +12,8 @@ import icu.bitgo.entity.common.BaseResponse;
 import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.factory.annotation.Autowired;
 
-@DubboService(version = "0.0.1")
+@DubboService(version = "0.0.1",loadbalance = "random")
+@SentinelResource
 public class ProductDBServiceImpl implements ProductDBService {
     private ProductInfoMapper productInfoMapper;
     private ProductMapper productMapper;
@@ -46,6 +49,7 @@ public class ProductDBServiceImpl implements ProductDBService {
             return productInfoBaseResponse;
 
     }
+
 
 }
 

@@ -16,6 +16,7 @@ dependencies {
     implementation "com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery:$nacosVersion"
     implementation "com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-config:$nacosVersion"
     implementation "org.apache.dubbo:dubbo-spring-boot-starter:$dubboVersion"
+//    implementation group: 'com.alibaba.csp', name: 'sentinel-apache-dubbo-adapter', version: '1.8.1'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 }

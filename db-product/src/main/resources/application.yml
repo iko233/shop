@@ -1,6 +1,5 @@
 server:
-  port: 8000
-
+  port: 8500
 spring:
   application:
     name: db-product
@@ -13,12 +12,9 @@ spring:
       client:
         reactive:
           endpoints: 192.168.100.128:9200
-  cloud:
-    nacos:
-      config:
-        server-addr: 127.0.0.1:8848
-      discovery:
-        server-addr: 127.0.0.1:8848
+
+
+
   datasource:
     username: root
     password: 123456
@@ -41,4 +37,7 @@ dubbo:
     base-packages: icu.bitigo.product.service
   protocol:
     name: dubbo
-    port: 20881
+    port: -1
+
+
+

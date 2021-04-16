@@ -1,0 +1,35 @@
+seata:
+  application-id: db-product
+  registry:
+    nacos:
+      application: db-product
+      cluster: standalone
+      namespace: default
+      password:
+      username:
+      server-addr: 127.0.0.1:8848
+
+    type: nacos
+  service:
+    disable-global-transaction: false
+    enable-degrade: false
+    grouplist:
+      - 127.0.0.1:8091
+    vgroup-mapping: db-product
+  enabled: true
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+      discovery:
+        server-addr: 127.0.0.1:8848
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8080
+        port: 8080
+      datasource:
+        ds:
+          nacos:
+            server-addr: 127.0.0.1:8848
+

@@ -6,6 +6,10 @@ group 'icu.bitgo'
 version '0.0.1-SNAPSHOT'
 
 repositories {
+    maven { url 'https://maven.aliyun.com/repository/jcenter' }
+    maven { url 'https://maven.aliyun.com/repository/google' }
+    maven { url 'https://maven.aliyun.com/repository/central' }
+    maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
     mavenCentral()
 }
 
@@ -20,6 +24,11 @@ dependencies {
     implementation "org.springframework:spring-jdbc:$jdbcVersion"
     implementation "com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-config:$nacosVersion"
     implementation "org.apache.dubbo:dubbo-spring-boot-starter:$dubboVersion"
+    implementation "com.alibaba.csp:sentinel-apache-dubbo-adapter:$sentinelVersion"
+    implementation "com.alibaba.csp:sentinel-transport-simple-http:$sentinelVersion"
+    implementation "com.alibaba.csp:sentinel-core:$sentinelVersion"
+    implementation "org.springframework.boot:spring-boot-autoconfigure:$springBootVersion"
+//    implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-seata:2021.1'
     compileOnly "org.projectlombok:lombok:$lombokVersion"
     annotationProcessor "org.projectlombok:lombok:$lombokVersion"
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'

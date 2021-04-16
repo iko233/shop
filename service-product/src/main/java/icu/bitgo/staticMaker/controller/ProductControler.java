@@ -1,5 +1,6 @@
 package icu.bitgo.staticMaker.controller;
 
+
 import icu.bitgo.staticMaker.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.method.support.ModelAndViewContainer;
 
 @Controller
+
 public class ProductControler {
     @Autowired
     private ProductService productService;
